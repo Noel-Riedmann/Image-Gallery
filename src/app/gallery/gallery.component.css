@@ -1,0 +1,117 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image {
+  width: auto;
+  height: 150px;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.image:hover {
+  transform: scale(1.1);
+}
+
+.image:hover::after {
+  opacity: 1;
+}
+
+/* Enlarging image */
+.enlarged-view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enlarged-view-container {
+  position: relative;
+}
+
+.enlarged-image {
+  max-width: 60rem;
+  max-height: 100%;
+  filter: blur(0);
+  /* Removes blur from Image*/
+}
+
+.return-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.description {
+  position: absolute;
+  bottom: 50px;
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.back {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.forward {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.pause {
+  position: fixed;
+  top: 20px;
+  right: 60px;
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+
+.play {
+  position: fixed;
+  top: 20px;
+  right: 100px;
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+
+
+
+

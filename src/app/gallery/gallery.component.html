@@ -1,0 +1,18 @@
+<div class="gallery">
+  <div class="image" *ngFor="let image of images" (click)="enlargeImage(image)">
+    <img src="{{ image.url }}" alt="{{ image.title }}">
+  </div>
+</div>
+
+<div class="enlarged-view" *ngIf="enlargedImage">
+  <div class="enlarged-view-container">
+    <button class="back" (click)="back()">&lt;</button>
+        <button class="forward" (click)="forward()">&gt;</button>
+        <img class="enlarged-image" [src]="enlargedImage.url" alt="{{ enlargedImage.title }}">
+        <button class="return-button" (click)="closeEnlargedView()">&#10005;</button>
+        <button class="play" (click)="play()">&#9654;</button>
+        <button class="pause" (click)="pause()"> &#10073;&#10073; </button>
+      </div>
+      <div class="description">This is: {{ enlargedImage.title }}</div>
+
+    </div>
