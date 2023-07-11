@@ -5,19 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { GallerytemplateComponent } from './gallerytemplate/gallerytemplate.component';
-import { LightGalleryComponent } from './light-gallery/light-gallery.component';
-
+import { NggalleryComponent } from './nggallery/nggallery.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GalleryComponent,
-    GallerytemplateComponent,
-    LightGalleryComponent
+    GallerytemplateComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NggalleryComponent
+
   ],
   providers: [],
   bootstrap: [AppComponent]
