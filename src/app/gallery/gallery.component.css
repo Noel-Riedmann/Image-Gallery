@@ -5,7 +5,7 @@
 
 .image {
   width: auto;
-  height: 150px;
+  height: 110px;
   margin: 10px;
   overflow: hidden;
   position: relative;
@@ -38,6 +38,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 
 .enlarged-view-container {
@@ -110,8 +111,3 @@
   border: none;
   border-radius: 5px;
 }
-
-
-
-
-

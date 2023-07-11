@@ -11,8 +11,7 @@ import { NggalleryComponent } from './nggallery/nggallery.component';
   declarations: [
     AppComponent,
     GalleryComponent,
-    GallerytemplateComponent
-
+    GallerytemplateComponent,
   ],
   imports: [
     BrowserModule,
